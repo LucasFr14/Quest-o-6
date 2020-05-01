@@ -1,0 +1,34 @@
+<html>
+	<meta charset="utf-8"/>
+	<header>
+		<title> Questão 6 </title>
+	</header>
+		
+	<body>
+        <h2>Apresentar resultado da função [3, 8, 9, 7, 6]</h2>
+        
+        <div id="botao">
+		<p onclick="solution(this)">
+            <button>Resultado</button>
+        </p>
+        </div>
+			<script>	
+                function solution(){
+                    var A = [3, 8, 9, 7, 6]
+                    for(x=1; x<4; x++){
+                    var pop = A.pop();
+                    document.write("<br>");
+                    document.write("<br>");
+                    document.write("Movimentação "+ x);
+                    document.write("<br>");
+                    var push = A.unshift(pop)
+                    document.write(A);
+                    document.write("<br>");
+                    document.write("Array atual "+A);
+                    document.write("<br>");
+                    document.write("<br>");
+                    }
+                }
+			</script>
+	</body>
+</html>
